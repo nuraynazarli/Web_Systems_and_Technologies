@@ -1,0 +1,146 @@
+.a5 {
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+.b5 {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.b51 {
+    font-family: Arial;
+    color: red;
+    font-style: italic;
+}
+
+.c5 {
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.c51 {
+    font-family: Verdana;
+    color: rgb(141, 141, 141);
+    margin-bottom: 15px;
+}
+
+.get-started {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}
+
+.d5 {
+    font-family: Arial;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.d51 {
+    font-family: Arial;
+    margin-bottom: 10px; 
+    padding-left: 7px;
+    font-size: small;
+}
+
+.d52 {
+    font-family: Arial;
+    margin-bottom: 10px; 
+    padding-left: 57px;
+    font-size: small;
+    color: blue;
+}
+
+.e5 {
+    font-family: Arial;
+    color: red;
+    text-align: center;
+    width: 220px;
+    font-size: 10px;
+}
+
+.e51 {
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    width: 220px;
+}
+
+.e52 {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    width: 220px;
+}
+
+.e53 {
+    font-family: Arial;
+    text-align: center;
+    width: 220px;
+    font-size: 13px;
+    padding-bottom: 7px;
+}
+
+.buy {
+    background-color: rgb(78, 78, 234);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 50px;
+    margin-left: 80px;
+}
+
+.f5 {
+    font-family: Arial;
+    font-size: 30px;
+}
+
+.usd {
+    font-family: Arial;
+    color: darkgray;
+    font-size: 20px;
+}
+
+.f51 {
+    font-family: Arial;
+    color: green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.f52 {
+    font-family: Arial;
+    color: rgb(123, 121, 121);
+}
+
+.discount {
+    color: red;
+}
+
+.g5 {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.at {
+    font-family: Arial;
+    font-weight: initial;
+    color: rgb(123, 121, 121);
+}
+
+.g51 {
+    font-family: Arial;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 550px;
+}
+
+.chp_it {
+    color: rgb(75, 75, 237);
+}

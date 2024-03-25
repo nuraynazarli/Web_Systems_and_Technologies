@@ -1,0 +1,383 @@
+<h1>Lesson 4 Exercises - Chrome DevTools & CSS Box Model</h1>
+
+<style>
+    .subscribe-button {
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .subscribe-button:hover {
+        opacity: 0.8;
+    }
+
+    .subscribe-button:active {
+        opacity: 0.5;
+    }
+
+    .join-button {
+        background-color: white;
+        border-color: rgb(41, 118, 211);
+        border-radius: solid;
+        border-width: 1px;
+        color: rgb(41, 118, 211);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: background-color 1s,
+        color 0.15s;
+    }
+
+    .join-button:hover {
+        background-color:  rgb(41, 118, 211);
+        color: white;
+    }
+
+    .join-button:active {
+        opacity: 0.7;
+    }
+
+    .tweet-button {
+        background-color: rgb(2, 137, 255);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 74px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: box-shadow 0.15s;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        vertical-align: top;
+    }
+
+    .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.15);
+    }
+</style>
+
+<button class="subscribe-button">
+    SUBSCRIBE
+</button>
+
+<button class="join-button">
+    JOIN
+</button>
+
+<button class="tweet-button">
+    Tweet
+</button>
+
+<br> <br>
+
+<style>
+    .uber-button {
+        background-color: black;
+        color: white;
+        border: none;
+        height: 36px;
+        width: 125px;
+        cursor: pointer;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .uber-button:hover {
+        opacity: 0.8;
+    }
+
+    .amazon-button {
+        background-color: rgb(255, 216, 20);
+        color: black;
+        border: none;
+        height: 36px;
+        width: 145px;
+        cursor: pointer;
+        border-radius: 15px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .amazon-button:hover {
+       background-color: rgb(255, 200, 20);
+    }
+
+    .github-button {
+        background-color: rgb(46, 164, 79);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 100px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: box-shadow 0.15s;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .github-button:hover {
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.15);
+    }
+
+    .bootstrap-start-button {
+        background-color: rgb(121, 82, 179);
+        color: white;
+        border: none;
+        height: 50px;
+        width: 140px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .bootstrap-start-button:hover {
+        background-color: rgb(81, 55, 120);
+    }
+
+    .bootstrap-download-button {
+        background-color: white;
+        color: rgb(108, 117, 125);
+        border-width: 2px;
+        border-color: rgb(108, 117, 125);
+        height: 50px;
+        width: 140px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 5px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .bootstrap-download-button:hover {
+        background-color:  rgb(108, 117, 125);
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+
+    .linkedin-apply-button {
+        background-color: rgb(10, 102, 194);
+        color: white;
+        border: none;
+        height: 50px;
+        width: 250px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .linkedin-apply-button:hover {
+        background-color: rgb(8, 75, 143);
+    }
+
+    .linkedin-save-button {
+        background-color: white;
+        color: rgb(10, 102, 194);
+        border-width: 2px;
+        border-color: rgb(10, 102, 194);
+        height: 50px;
+        width: 100px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 5px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .linkedin-save-button:hover {
+        background-color: rgb(197, 222, 248);
+        border-width: 3px;
+        border-color: rgb(10, 102, 194);
+    }
+
+    .stretch {
+        background-color: green;
+        color: white;
+        border: none;
+        width: 70px;
+        height: 30px;
+        cursor: auto;
+        transition: 1s;
+    }
+
+    .stretch:hover {
+        width: 100px;
+        height: 50px;    
+    }
+
+    .shadow {
+        background-color: green;
+        color: white;
+        border: none;
+        width: 70px;
+        height: 30px;
+        cursor: pointer;
+        transition: 1s;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all;      
+    }
+
+    .shadow:active {
+        box-shadow: none;
+        margin-left: 5px;
+        margin-top: 5px;     
+    }
+
+    .one {
+        background-color: green;
+        color: white;
+        border: none;
+        width: 60px;
+        height: 30px;
+        cursor: pointer;
+        margin-right: 5px;  
+        transition: 0.5s;
+    }
+
+    .one:hover {
+        width: 70px;
+    }
+
+    .two {
+        background-color: green;
+        color: white;
+        border: none;
+        width: 60px;
+        height: 30px;
+        cursor: pointer;
+        margin-right: 5px;
+        transition: 0.5s;       
+    }
+
+    .two:hover {
+        width: 70px;
+    }
+
+    .three {
+        background-color: green;
+        color: white;
+        border: none;
+        width: 60px;
+        height: 30px;
+        cursor: pointer; 
+        transition: 0.5s;
+    }
+
+    .three:hover {
+        width: 70px;
+    }
+</style>
+
+<button class="uber-button">
+    Request now
+</button>
+
+<br> <br>
+
+<button class="amazon-button">
+    Add to Cart
+</button>
+
+<br> <br>
+
+<button class="github-button">
+    Sign up
+</button>
+
+<br> <br>
+
+<button class="bootstrap-start-button">
+    Get started
+</button>
+
+<button class="bootstrap-download-button">
+    Download
+</button>
+
+<br> <br>
+
+<button class="linkedin-apply-button">
+    Apply on company website
+</button>
+
+<button class="linkedin-save-button">
+    Save
+</button>
+
+<br> <br>
+
+<button style="height: 35px; width: 50px; margin-right: 8px;">
+    Back
+</button>
+
+<a href="">1</a>
+<a href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+
+<button style="height: 35px; width: 50px; margin-left: 8px;">
+    Next
+</button>
+
+<br> <br>
+
+<button class="stretch">
+    Stretch
+</button>
+
+<br> <br>
+
+<button class="shadow">
+    Shadow
+</button>
+
+<br> <br>
+
+<button class="one">
+    One
+</button>
+
+<button class="two">
+    Two
+</button>
+
+<button class="three">
+    Three
+</button>
