@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <style>
+            .a11 {
+                display: grid;
+                grid-template-columns: 200px 75px;
+            }
+
+            .lightblue-a {
+                background-color: lightblue;
+            }
+
+            .lightpink-a {
+                background-color: lightpink;
+            }
+
+            .b11 {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+
+            .col1-b, .col3-b {
+                background-color: lightblue;
+            }
+
+            .col2-b {
+                background-color: lightpink;
+            }
+
+            .c11 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 10px;
+            }
+
+            .lightpink-c {
+                background-color: lightpink;
+            }
+
+            p {
+                font-family: Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .d11 {
+                display: grid;
+                grid-template-columns: 150px 150px 150px;
+                column-gap: 15px;
+            }
+            
+            .g9 {
+                width: 150px;
+                height: 250px;
+                box-shadow: 0 15px 15px rgb(0, 0, 0, 0.2);
+                margin-right: 15px;
+            }
+
+            .cat {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+
+            .name {
+                font-family: Arial;
+                font-weight: bold;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding-left: 5px;
+            }
+
+            .friends {
+                font-family: Arial;
+                margin-top: 5px;
+                font-size: 13px;
+                align-items: center;
+                padding-left: 5px;
+            }
+
+            .add {
+                background-color: rgb(83, 83, 244);
+                color: white;
+                border: none;
+                width: 100px;
+                height: 25px;
+                border-radius: 5px;
+                margin-left: 5px;
+                margin-top: 2px;
+            }
+
+            .profile-picture {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-left: 5px;
+                margin-bottom: 3px;
+            }
+
+            .follow {
+                display: grid;
+                grid-template-columns: 35px 1fr;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Lesson 11 Exercises - CSS Grid</h1>
+
+        <div class="a11">
+            <div class="lightblue-a">200px</div>
+
+            <div class="lightpink-a">75px</div>
+        </div>
+
+        <br>
+
+        <div class="b11">
+            <div class="col1-b">col1</div>
+
+            <div class="col2-b">col2</div>
+
+            <div class="col3-b">col3</div>
+        </div>
+
+        <br>
+
+        <div class="c11">
+            <div class="lightpink-c">col1</div>
+            <div class="lightpink-c">col1</div>
+            <div class="lightpink-c">col2</div>
+            <div class="lightpink-c">col2</div>
+            <div class="lightpink-c">col3</div>
+            <div class="lightpink-c">col3</div>
+            <div class="lightpink-c">col4</div>
+            <div class="lightpink-c">col4</div>
+        </div>
+        
+        <br><br><br>
+
+        <div class="d11">
+            <div class="profile">
+                <div class="g9">
+                    <img class="cat" src="cat.jpg" >
+                    <p class="name">Oliver</p>
+                    <div class="follow">
+                        <img class="profile-picture", src="dog-2.jpg">
+                        <p class="friends">2 mutual friends</p>
+                    </div>
+                    <button class="add">Add Friend</button>
+                </div>
+            </div>
+    
+            <div class="profile">
+                <div class="g9">
+                    <img class="cat" src="cat-2.jpg" >
+                    <p class="name">Mimi</p>
+                    <div class="follow">
+                        <img class="profile-picture", src="dog-2.jpg">
+                        <p class="friends">3 mutual friends</p>
+                    </div>
+                    <button class="add">Add Friend</button>
+                </div>
+            </div>
+    
+            <div class="profile">
+                <div class="g9">
+                    <img class="cat" src="dog.jpg" >
+                    <p class="name">Rex</p>
+                    <div class="follow">
+                        <img class="profile-picture", src="dog-2.jpg">
+                        <p class="friends">4 mutual friends</p>
+                    </div>
+                    <button class="add">Add Friend</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube.com Clone</title>
+
+        <style>
+            p {
+                font-family: Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .profile {
+                display: inline-block;
+            }
+            
+            .g9 {
+                width: 150px;
+                height: 250px;
+                box-shadow: 0 15px 15px rgb(0, 0, 0, 0.2);
+                display: inline-block;
+                margin-right: 15px;
+            }
+
+            .cat {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+
+            .name {
+                font-family: Arial;
+                font-weight: bold;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding-left: 5px;
+            }
+
+            .friends {
+                font-family: Arial;
+                margin-top: 5px;
+                font-size: 13px;
+                padding-left: 5px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .add {
+                background-color: rgb(83, 83, 244);
+                color: white;
+                border: none;
+                width: 100px;
+                height: 25px;
+                border-radius: 5px;
+                margin-left: 5px;
+                margin-top: 2px;
+            }
+
+            .profile-picture {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+
+            .follow {
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Lesson 10 Exercises - Nested Layouts Techniques</h1>
+
+        <div class="profile">
+            <div class="g9">
+                <img class="cat" src="cat.jpg" >
+                <p class="name">Oliver</p>
+                <div class="follow">
+                    <img class="profile-picture", src="dog-2.jpg">
+                    <p class="friends">2 mutual friends</p>
+                </div>
+                <button class="add">Add Friend</button>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="g9">
+                <img class="cat" src="cat-2.jpg" >
+                <p class="name">Mimi</p>
+                <div class="follow">
+                    <img class="profile-picture", src="dog-2.jpg">
+                    <p class="friends">3 mutual friends</p>
+                </div>
+                <button class="add">Add Friend</button>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="g9">
+                <img class="cat" src="dog.jpg" >
+                <p class="name">Rex</p>
+                <div class="follow">
+                    <img class="profile-picture", src="dog-2.jpg">
+                    <p class="friends">4 mutual friends</p>
+                </div>
+                <button class="add">Add Friend</button>
+            </div>
+        </div>
+
+    </body>
+</html>
