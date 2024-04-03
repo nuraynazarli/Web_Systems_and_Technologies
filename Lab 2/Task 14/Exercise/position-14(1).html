@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position Fixed</title>
+
+        <style>
+            body {
+                height: 3000px;
+            }
+            .bottom-right {
+                background-color: black;
+                color: white;
+                bottom: 20px;
+                right: 20px;
+                position: fixed;
+            }
+
+            .right-sidebar {
+                background-color: green;
+                color: white;
+                width: 100px;
+                position: fixed;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+
+            .black {
+                background-color: black;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Lesson 14 Exercises - Position Fixed</h1>
+
+        <div class="black"></div>
+
+        <div class="right-sidebar">
+            right sidebar
+        </div>
+
+        <div class="bottom-right">
+            bottom-right
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube.com Clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="video.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="sidebar.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="icons/hamburger-menu.png">
+                <img class="youtube" src="icons/youtube.png">
+            </div>  
+
+            <div class="middle-section">
+                <input class="search-bar", type="text", placeholder="Search">
+
+                <button class="search">
+                    <img class="search-icon" src="icons/search.png">
+                    <div class="tooltip">Search</div>
+                </button>
+
+                <button class="microphone">
+                    <img class="microphone-icon" src="icons/microphone.png">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+
+            <div class="right-section">
+                <div class="camera-icon-container">
+                    <img class="camera-icon" src="icons/camera.png">
+                    <div class="tooltip">Create</div>
+                </div>
+
+                <div class="notification-icon-container">
+                    <img class="notification-icon" src="icons/notification.png">
+                    <div class="notification-count">
+                        1
+                    </div>
+                    <div class="tooltip">Notification</div>
+                </div>
+                <img class="profile-icon" src="icons/profile.jpg">
+            </div>
+        </header>
+
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="icons/home.png">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/explore.png">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/subsctiptions.png">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/originals.png"
+                style="border: solid;
+                border-color: black;
+                border-radius: 7px;
+                height: 15px;
+                border-width: 2px;">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/music.webp">
+                <div>Youtube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/library.png">
+                <div>Library</div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="video-grid">
+                <div class="video-preview">
+                    <div class="maxresdefault-row">
+                        <a href="https://www.youtube.com/watch?v=aB0TlsnkY6E&t=6s" target="_blank" class="video-title-link">
+                            <img class="maxresdefault", src="maxresdefault/maxresdefault.jpg">
+                        </a> 
+    
+                        <div class="video-time">
+                            14:20
+                        </div>
+                    </div>
+                
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/@ThinkMediaTV" target="_blank">
+                                    <img class="profile-picture", src="channel-pictures/channel-picture.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/channel-picture.jpg">
+                                    <div>
+                                        <div class="channel-tooltip-name">
+                                            Think Media
+                                        </div>
+                                        <div class="channel-tooltip-stats">
+                                            2.89M subscribers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=aB0TlsnkY6E&t=6s" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    How to Make <strong>a YouTube Video</strong> (Beginners Tutorial)
+                                </p>
+                            </a>
+                    
+                                <p class="video-author">
+                                Think Media
+                                </p>
+                    
+                                <p class="video-stats">
+                                1.8M views &#183; 4 years ago
+                                </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="video-preview">
+                    <div class="maxresdefault-row">
+                        <a href="https://www.youtube.com/watch?v=tsu01TR7Ofk" target="_blank" class="video-title-link">
+                            <img class="maxresdefault", src="maxresdefault/maxresdefault-2.jpg"> 
+                        </a>
+    
+                        <div class="video-time">
+                            10:15
+                        </div>
+                    </div>
+                
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/@PrimalVideo" target="_blank">
+                                    <img class="profile-picture", src="channel-pictures/channel-picture-2.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/channel-picture-2.jpg">
+                                    <div>
+                                        <div class="channel-tooltip-name">
+                                            Primal Video
+                                        </div>
+                                        <div class="channel-tooltip-stats">
+                                            1.62M subscribers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=tsu01TR7Ofk" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    How to Upload <strong>Videos on Youtube</strong> (Settings to Maximize Views!)
+                                </p>
+                            </a>
+    
+                                <p class="video-author">
+                                Primal Video
+                                </p>
+                    
+                                <p class="video-stats">
+                                1.8M views &#183; 4 years ago
+                                </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="video-preview">
+                    <div class="maxresdefault-row">
+                        <a href="https://www.youtube.com/watch?v=wYkmvq_vANs" target="_blank" class="video-title-link">
+                            <img class="maxresdefault", src="maxresdefault/maxresdefault-3.jpg"> 
+                        </a>
+    
+                        <div class="video-time">
+                            09:05
+                        </div>
+                    </div>
+                
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/@Howfinity" target="_blank">
+                                    <img class="profile-picture", src="channel-pictures/channel-picture-3.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/channel-picture-3.jpg">
+                                    <div>
+                                        <div class="channel-tooltip-name">
+                                            Howfinity
+                                        </div>
+                                        <div class="channel-tooltip-stats">
+                                            852K subscribers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=wYkmvq_vANs" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    How to Create <strong>A Youtube Channel</strong> - 2023 Beginner's Guide
+                                </p>
+                            </a>
+                    
+                                <p class="video-author">
+                                Howfinity
+                                </p>
+                    
+                                <p class="video-stats">
+                                1.4M views &#183; 2 years ago
+                                </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="video-preview">
+                    <div class="maxresdefault-row">
+                        <a href="https://www.youtube.com/watch?v=JYROm0WwPKI" target="_blank" class="video-title-link">
+                            <img class="maxresdefault", src="maxresdefault/maxresdefault-4.jpg"> 
+                        </a>
+    
+                        <div class="video-time">
+                            14:40
+                        </div>
+                    </div>
+                
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/@PrimalVideo" target="_blank">
+                                    <img class="profile-picture", src="channel-pictures/channel-picture-4.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/channel-picture-4.jpg">
+                                    <div>
+                                        <div class="channel-tooltip-name">
+                                            Primal Video
+                                        </div>
+                                        <div class="channel-tooltip-stats">
+                                            1.62M subscribers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=JYROm0WwPKI" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    3 Reasons <strong>Your YouTube Channel is</strong> NOT Growing!
+                                </p>
+                            </a>
+                    
+                                <p class="video-author">
+                                Primal Video
+                                </p>
+                    
+                                <p class="video-stats">
+                                1.62M views &#183; 3 years ago
+                                </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="video-preview">
+                    <div class="maxresdefault-row">
+                        <a href="https://www.youtube.com/watch?v=zRZpmkIn5Ac" target="_blank" class="video-title-link">
+                            <img class="maxresdefault", src="maxresdefault/maxresdefault-5.jpg"> 
+                        </a>
+    
+                        <div class="video-time">
+                            08:15
+                        </div>
+                    </div>
+                
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/@KevinStratvert" target="_blank">
+                                    <img class="profile-picture", src="channel-pictures/channel-picture-5.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/channel-picture-5.jpg">
+                                    <div>
+                                        <div class="channel-tooltip-name">
+                                            Kevin Stratvert
+                                        </div>
+                                        <div class="channel-tooltip-stats">
+                                            2.87M subscribers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=zRZpmkIn5Ac" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    How to Make <strong>a YouTube Channel</strong>
+                                </p>
+                            </a>
+                    
+                                <p class="video-author">
+                                Kevin Stratvert
+                                </p>
+                    
+                                <p class="video-stats">
+                                276K views &#183; 3 years ago
+                                </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="video-preview">
+                    <div class="maxresdefault-row">
+                        <a href="https://www.youtube.com/watch?v=bVPjcLL9jGM" target="_blank" class="video-title-link">
+                            <img class="maxresdefault", src="maxresdefault/maxresdefault-6.jpg"> 
+                        </a>
+    
+                        <div class="video-time">
+                            15:40
+                        </div>
+                    </div>
+                
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <div class="profile-picture-container">
+                                <a href="https://www.youtube.com/@ThinkMediaTV" target="_blank">
+                                    <img class="profile-picture", src="channel-pictures/channel-picture-6.jpg">
+                                </a>
+                                <div class="channel-tooltip">
+                                    <img class="channel-tooltip-picture" src="channel-pictures/channel-picture-6.jpg">
+                                    <div>
+                                        <div class="channel-tooltip-name">
+                                            Think Media
+                                        </div>
+                                        <div class="channel-tooltip-stats">
+                                            2.89M subscribers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=bVPjcLL9jGM" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    How to Make <strong>a YouTube Channel</strong> for Beginners (Step-by-Step Tutorial)
+                                </p>
+                            </a>
+                    
+                                <p class="video-author">
+                                Think Media
+                                </p>
+                    
+                                <p class="video-stats">
+                                3.9M views &#183; 3 years ago
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
